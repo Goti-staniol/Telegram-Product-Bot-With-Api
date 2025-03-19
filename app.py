@@ -8,4 +8,6 @@ async def start_project() -> None:
     Base.metadata.create_all(engine)
     await asyncio.create_task(start_api())
 
-asyncio.run(start_project())
+
+if __name__ == '__main__':
+    asyncio.run(start_project())
